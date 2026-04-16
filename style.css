@@ -1,0 +1,207 @@
+
+* {
+    font-family: 'Comic Neue', cursive;
+}
+
+body {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #1e1d1d;
+    background: linear-gradient(to bottom, #ffffff, #fcfbfb);
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    font-family: 'Comic Neue', cursive;
+    color: #FF6B6B; /* Коралловый */
+    text-shadow: 2px 2px 0 #FFD166; /* Желтая тень */
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #4ECDC4; /* Бирюзовый */
+}
+dt {
+    font-size: 20px;
+    color:#C44569;
+    
+}
+dd {
+    font-size: 20px;
+    color:#ed72db;
+    
+}
+/* Карточки с детским стилем */
+.card {
+    font-family: 'Comic Neue', cursive;
+    font-size: 20px;
+    color: #f3b24f;
+    text-shadow: 2px 2px 0 #523102;
+    background-color: #FFD166; /* Желтый фон */
+    border-radius: 20px;
+    padding: 20px;
+    border: 3px dashed #FF6B6B; /* Пунктирная рамка */
+    box-shadow: 5px 5px 0px rgba(255, 107, 107, 0.3);
+}
+
+/* Меню */
+.menu_item {
+    font-family: 'Comic Neue', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #1A535C; /* Темно-бирюзовый */
+    text-transform: uppercase; /* верхний регистр*/
+    letter-spacing: 1px;
+}
+
+/* Кнопки */
+button, .button {
+    font-family: 'Comic Neue', cursive;
+    font-size: 18px;
+    background: linear-gradient(145deg, #FF6B6B, #FF8E8E);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+    box-shadow: 0 4px 0 #C44569;
+    transition: all 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #C44569;
+}
+.menu{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #f3f3f3;
+    position: fixed; /* Закрепляем */
+    top: 0; /* Прижимаем к верху */
+    left: 0; /* Прижимаем к левому краю */
+    width: 100%; /* На всю ширину */
+    z-index: 1000; /* Чтобы меню было поверх всего */
+}
+.menu_item{
+    /* border: 1px solid rgb(206, 158, 158); */
+}
+.banner {
+        position: relative;
+        width: 100%;
+        height: 400px; /* Фиксированная высота */
+        background-image: url('https://sotni.ru/wp-content/uploads/2023/08/priazha-na-belom-fone-1.webp');
+        background-size: cover; /* Картинка покрывает весь блок */
+        background-position: center; /* Центрирование картинки */
+        display: flex;
+        align-items: center; /* Вертикальное выравнивание */
+        justify-content: center; /* Горизонтальное выравнивание */
+        flex-direction: column; /*располагаем элементы вертикально */
+    }
+    
+    .banner h1 {
+        color: rgb(59, 154, 250);
+        font-size: 4rem;
+        text-align: center;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.784);
+        padding: 10px;
+        /* background: rgba(250, 249, 249, 0.3); Полупрозрачный фон для текста */
+        border-radius: 30px;
+        margin-top: 0; /* Убираем лишний отступ сверху */
+        font-family: 'Indie Flower', cursive; /* Другой шрифт для контраста */
+    }
+    .banner h2 {
+        color: rgb(236, 144, 46);
+        font-size: 6rem;
+        text-align: center;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.784);
+        padding: 20px;
+         margin-bottom: 0; /* Убираем лишний отступ снизу */
+        font-family: 'Fredoka One', cursive; /* Добавил один из ваших шрифтов */
+        text-transform: uppercase; /* Делаем заглавными буквами */
+        letter-spacing: 3px; /* Разряжаем буквы */
+        /* background: rgba(250, 249, 249, 0.3); Полупрозрачный фон для текста */
+        border-radius: 30px;
+    }
+.menu_item:hover{
+    color: rgb(143, 136, 136);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+img{ 
+     width: 100%; 
+ } 
+body{
+    margin:0;
+}
+h1{
+    text-align: center;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Добавляем отступы между карточками */
+}
+ .about{
+    margin-top: 100px;
+ }
+.card{
+    width: 300px;
+    height: 400px;
+    border-radius: 30px;
+    background-size: cover; /* Картинка заполняет весь блок */
+    background-position: center; /* Центрируем картинку */
+    background-repeat: no-repeat; /* Запрещаем повторение */
+    display: flex;
+    justify-content: center; /* Горизонтальное выравнивание */
+    align-items: center; /* Вертикальное выравнивание */
+    font-size: 30px; /* Увеличение размера текста */
+    font-weight: bold; /* Жирный текст */
+    text-align: center; /* Центрирование многострочного текста */
+    padding: 30px; /* Отступы от краев */
+}
+.card:hover{
+    color: rgb(245, 137, 4);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    /* filter: brightness(0.4); */
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+.card-1 {
+    background-image: url('https://cs5.livemaster.ru/storage/fd/11/df690ebada0175a18929bc6cc74e--ukrasheniya-kole-iz-naturalnyh-kamnej-novinki.jpg');
+}
+
+.card-2 {
+    background-image: url('https://cs11.livemaster.ru/storage/topicavatar/600x450/d6/c4/2bae658782b9c5375b4d6aad8bbce7555aacxn.jpg?h=-ivuSJTrvUiuSBLtpWDOEw');
+}
+
+.card-3 {
+    background-image: url('https://st3.depositphotos.com/2939989/12718/i/950/depositphotos_127186458-stock-photo-winter-knitted-clothes-stack-on.jpg?forcejpeg=true');
+}
+
+footer{
+    background-color: rgb(234, 136, 37);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0px;
+}
+
+.wrapper{
+    display: flex;
+    align-items: flex-start; /* Выравниваем по верху */
+}
+.pic{
+    width: 35%;
+    margin-top: -130px;
+}
+
+.text_info{
+    width: 60%;
+}

@@ -1,0 +1,20 @@
+.cards{
+    width: 300px;
+    height: 400px;
+    border-radius: 30px;
+    background-size: cover; /* Картинка заполняет весь блок */
+    background-position: center; /* Центрируем картинку */
+    background-repeat: no-repeat; /* Запрещаем повторение */
+    display: flex;
+    justify-content: center; /* Горизонтальное выравнивание */
+    align-items: center; /* Вертикальное выравнивание */
+    font-size: 30px; /* Увеличение размера текста */
+    font-weight: bold; /* Жирный текст */
+    text-align: center; /* Центрирование многострочного текста */
+    padding: 30px; /* Отступы от краев */
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Добавляем отступы между карточками */
+}

@@ -1,0 +1,76 @@
+* {
+    font-family: 'Comic Neue', cursive;
+}
+h1{
+    font-size: 25px;
+    color: rgb(75, 45, 5);
+    text-shadow: #1e1d1d;
+}
+h3{
+    font-size: 18px;
+}
+body {
+    background-image:url('https://img.goodfon.ru/original/2880x1800/a/b5/priazha-nitki-dereviannyi-fon-raznotsvetie.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center; /* Вертикальное выравнивание */
+    justify-content: center; /* Горизонтальное выравнивание */
+}
+.order {
+    font-size: 40px;
+    line-height: 1.5;
+    color: #1e1d1d;
+    
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; /* Расстояние между блоками */
+    width: 50%;
+    left: 0%;
+    margin-left: auto; /* Прижимает блок к левому краю */
+    margin-right: 0; /* Убирает отступ слева */
+
+}
+input[type="text"] {
+    font-size: 22px;
+    border: 2px solid rgb(255, 166, 0);
+    display: flex;
+    
+}
+input[type="email"] {
+    font-size: 22px;
+    border: 2px solid rgb(255, 166, 0);
+    display: flex;
+    
+}
+textarea {
+    font-size: 22px;
+    border: 2px solid rgb(255, 166, 0);
+    
+}
+select {
+    font-size: 22px;
+    border: 2px solid rgb(255, 166, 0);
+    
+}
+button[type="submit"] {
+    font-size: 22px;
+    border: 2px solid rgb(255, 166, 0);
+    
+}
+.order-form {
+    display: block; /* Просто блочная модель */
+}
+
+.order-form input[type="text"],
+.order-form input[type="email"],
+.order-form textarea,
+.order-form select {
+    display: block; /* Каждый элемент на новой строке */
+    width: 100%;
+    margin-bottom: 25px; /* Отступ между элементами */
+    font-size: 22px;
+    border: 2px solid rgb(255, 166, 0);
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+}
