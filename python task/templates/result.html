@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Результат</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🎯 Ваш результат</h1>
+
+    <h2 style="text-align:center;">{{ result }}</h2>
+
+    <p style="text-align:center; margin-top:15px;">
+        {{ description }}
+    </p>
+
+    <a href="/">
+        <button>🔄 Пройти заново</button>
+    </a>
+
+</div>
+
+</body>
+</html>

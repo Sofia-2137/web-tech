@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Фокус-помощник</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>🧠 Фокус-помощник</h1>
+    <p class="subtitle">Определи причину своей прокрастинации</p>
+
+    <form action="/predict" method="post">
+
+        <div class="question">
+    <label>Усталость</label>
+
+    <input type="range" name="fatigue" min="1" max="5" step="1" value="3" required>
+
+    <div class="scale">
+        <span>1 — нет</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5 — сильно</span>
+    </div>
+</div>
+
+        <div class="question">
+    <label>Интерес</label>
+
+    <input type="range" name="interest" min="1" max="5" step="1" value="3" required>
+
+    <div class="scale">
+        <span>1 — нет</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5 — сильно</span>
+    </div>
+</div>
+
+        <div class="question">
+    <label>Тревожность</label>
+
+    <input type="range" name="anxiety" min="1" max="5" step="1" value="3" required>
+
+    <div class="scale">
+        <span>1 — нет</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5 — сильно</span>
+    </div>
+</div>
+
+        <div class="question">
+    <label>Ясность задачи</label>
+
+    <input type="range" name="clarity" min="1" max="5" step="1" value="3" required>
+
+    <div class="scale">
+        <span>1 — нет</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5 — сильно</span>
+    </div>
+</div>
+
+        <div class="question">
+    <label>Есть ли отвлекающие факторы?</label>
+
+    <select name="distractions">
+        <option value="0">Нет</option>
+        <option value="1">Да</option>
+    </select>
+</div>
+
+        <div class="question">
+    <label>Отторжение ('я могу это сделать но не хочу')</label>
+
+    <input type="range" name="resistance" min="1" max="5" step="1" value="3" required>
+
+    <div class="scale">
+        <span>1 — нет</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5 — сильно</span>
+    </div>
+</div>
+
+        <div class="question">
+    <label>Качество сна</label>
+
+    <input type="range" name="sleep" min="1" max="5" step="1" value="3" required>
+
+    <div class="scale">
+        <span>1 — нет</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5 — сильно</span>
+    </div>
+</div>
+
+        <div class="question">
+    <label>Стресс</label>
+
+    <input type="range" name="stress" min="1" max="5" step="1" value="3" required>
+
+    <div class="scale">
+        <span>1 — нет</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5 — сильно</span>
+    </div>
+</div>
+
+        <div class="question">
+    <label>Уверенность в задаче</label>
+
+    <input type="range" name="confidence" min="1" max="5" step="1" value="3" required>
+
+    <div class="scale">
+        <span>1 — нет</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5 — сильно</span>
+    </div>
+</div>
+
+        <div class="question">
+    <label>Перфекционизм</label>
+
+    <input type="range" name="perfectionism" min="1" max="5" step="1" value="3" required>
+
+    <div class="scale">
+        <span>1 — нет</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5 — сильно</span>
+    </div>
+</div>
+
+        <div class="question">
+    <label>Понятность задачи</label>
+
+    <input type="range" name="meaning" min="1" max="5" step="1" value="3" required>
+
+    <div class="scale">
+        <span>1 — нет</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5 — сильно</span>
+    </div>
+</div>
+
+        <div class="question">
+    <label>Давление дедлайна</label>
+
+    <input type="range" name="deadline" min="1" max="5" step="1" value="3" required>
+
+    <div class="scale">
+        <span>1 — нет</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5 — сильно</span>
+    </div>
+</div>
+
+        <button type="submit">✨ Узнать результат</button>
+
+    </form>
+</div>
+
+</body>
+</html>
